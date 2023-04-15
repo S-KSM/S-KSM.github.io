@@ -147,9 +147,9 @@ footer {
 }
 @media (max-width: 768px) {
     main {
-        margin: 40px 20px;
+        margin: 20px;
     }
-    
+
     aside {
         position: static;
         display: flex;
@@ -164,12 +164,17 @@ footer {
 
     .sidebar-nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
     }
 
     .sidebar-nav li {
         margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    .sidebar-nav li:last-child {
+        margin-right: 0;
     }
 
     .sidebar-divider {
