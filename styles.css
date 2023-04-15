@@ -145,3 +145,40 @@ footer {
     color: #F9E4B7;
     font-size: 0.9em;
 }
+@media (max-width: 768px) {
+    main {
+        margin: 40px 20px;
+    }
+    
+    aside {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 1rem;
+        background-color: #f5f5f5;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .sidebar-nav li {
+        margin-bottom: 0;
+    }
+
+    .sidebar-divider {
+        display: none;
+    }
+
+    .sidebar-icon {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
