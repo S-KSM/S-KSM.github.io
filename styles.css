@@ -4,70 +4,124 @@ body {
     background-color: #ECF0F1;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main"
+        "sidebar footer";
+    height: 100vh;
 }
+
 header {
     background-color: #2C3E50;
     padding: 20px 0;
     text-align: center;
-    }
-    header h1 {
+    grid-area: header;
+}
+
+header h1 {
     font-size: 2.5em;
     color: #F9E4B7;
     margin: 0;
-    }
-    .profile-photo {
+}
+
+.profile-photo {
     width: 150px;
     border-radius: 50%;
     margin-top: 20px;
-    }
-    main {
+}
+
+aside {
+    grid-area: sidebar;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    height: 100%;
+    width: 200px;
+}
+
+.sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.sidebar-nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    grid-area: main;
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
-    }
-    section {
+}
+
+section {
     background-color: #F9E4B7;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
-    }
-    h2 {
+}
+
+h2 {
     font-size: 2em;
     color: #D35400;
     margin-bottom: 10px;
-    }
-    p, ul {
+}
+
+p, ul {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
-    }
-    a {
+}
+
+a {
     color: #1ABC9C;
     text-decoration: none;
-    }
-    a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-    }
-    .project-photo {
+}
+
+.project-photo {
     width: 150px;
     height: auto;
     border-radius: 10px;
     margin-right: 10px;
-    }
-    ul li {
+}
+
+ul li {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    }
-    .icon {
+}
+
+.icon {
     width: 20px;
     height: auto;
     margin-right: 5px;
-    }
-    footer {
+}
+
+footer {
+    grid-area: footer;
     text-align: center;
     padding: 20px 0;
     background-color: #2C3E50;
     color: #F9E4B7;
     font-size: 0.9em;
-    }
+}
