@@ -1,23 +1,104 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shobeir Seddington - Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shobeir Seddington</h1>
+        <img src="./img/shobeir.jpeg" alt="Shobeir Seddington" class="profile-photo">
+    </header>
+    <aside>
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+                <p>I'm <b>Shobeir Seddington</b>,  a passionate data science professional with a strong focus on the healthcare and tech industries.</p>
+                <p>Currently, I'm the Director of Data Science and Personalization at CVS Health. I've held some pretty cool roles, like being a Principal Data Scientist at Gopuff and working in various positions at Aetna, a CVS Health Company.</p>
 
-<div class="home">
+                <p>In addition to my work in the industry, I've had the opportunity to be an Advisor for Harvard Business Review. Throughout my career, I've loved leading teams, optimizing processes, and using cutting-edge data analytics techniques to make a real impact.</p>
+                
+                <p>Feel free to <a href="#contact">reach out</a> if you want to chat about data science, healthcare, or anything else!</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <ul>
+                <li>
+                    <img src="./img/project1_photo.jpg" alt="Project 1" class="project-photo">
+                    <div>
+                        <a href="https://example.com/project1">Project 1: Customer Segmentation for E-commerce</a>
+                        <p>Segmented customers into groups based on their behavior and preferences, improving targeted marketing efforts.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/project2_photo.jpg" alt="Project 2" class="project-photo">
+                    <div>
+                        <a href="https://example.com/project2">Project 2: Sales Forecasting with Time Series Analysis</a>
+                        <p>Developed a sales forecasting model that helped the company optimize inventory management and resource allocation.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/project3_photo.jpg" alt="Project 3" class="project-photo">
+                    <div>
+                        <a href="https://example.com/project3">Project 3: Sentiment Analysis of Product Reviews</a>
+                        <p>Implemented a sentiment analysis model to analyze customer reviews and identify areas for product improvement.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="papers">
+            <h2>Select Publications</h2>
+            <ul>
+                <li>
+                    <img src="./img/astropaint.png" alt="astropaint" class="project-photo">
+                    <div>
+                        <a href="https://par.nsf.gov/servlets/purl/10287961">AstroPaint: A Python Package for Painting Halo Catalogs into Celestial Maps</a>
+                        <p>AstroPaint is a Python package designed to generate and visualize sky maps of various astrophysical signals from dark matter halos and their host gas. It produces whole-sky mock maps at desired resolutions using input halo catalogs and astrophysical effect profiles. With its Object-Oriented, parallel design, AstroPaint offers tools for catalog filtering, map manipulation, and cutout stacking, allowing easy scalability for high-resolution maps and large catalogs. Although primarily developed for galaxy cluster signals, its applications extend to halos of any size or point sources.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/NiFeCatalyst.gif" alt="NiFe" class="project-photo">
+                    <div>
+                        <a href="https://pubs.acs.org/doi/abs/10.1021/ja509779q">A Nickel Phosphine Complex as a Fast and Efficient Hydrogen Production Catalyst</a>
+                        <p>The research focuses on creating a cost-effective and environmentally friendly alternative to traditional noble-metal-based catalysts. The nickel phosphine complex exhibits fast and efficient catalytic activity for hydrogen production, demonstrating its potential as a promising alternative in sustainable energy applications. The study highlights the importance of exploring non-noble metal-based catalysts for hydrogen production, paving the way for more sustainable and economical energy solutions.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/polarizability.gif" alt="polarizability" class="project-photo">
+                    <div>
+                        <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.6b06241">Polarizability as a Molecular Descriptor for Conductance in Organic Molecular Circuits</a>
+                        <p>This study explores the connection between molecular polarizability and conductance in electrified molecular interfaces. Results show that for a family of structurally connected molecules, conductance decreases as polarizability increases. This supports the idea that a molecule in a junction acts as a dielectric, polarized by the applied bias, creating a barrier that hinders tunneling. Using polarizability as a descriptor offers advantages over a molecular orbitals-based picture. The research uses Simmons' tunneling model, incorporating image charge and dielectric effects, to represent the molecular junction. Despite its simplicity, this model reveals a previously overlooked connection and encourages further investigation.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>
+                <img src="./img/email_icon.png" alt="Email" class="icon">
+                Email: <a href="mailto:shobmaz@gmail.com">shobmaz@gmail.com</a><br>
+                <img src="./img/linkedin_icon.png" alt="LinkedIn" class="icon">
+                LinkedIn: <a href="https://www.linkedin.com/in/shobeirS/" target="_blank">www.linkedin.com/in/shobeir-seddington</a><br>
+                <img src="./img/github_icon.png" alt="GitHub" class="icon">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+                GitHub: <a href="https://github.com/S-KSM" target="_blank">github.com/S-KSM</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Shobeir Seddington. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
