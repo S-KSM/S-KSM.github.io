@@ -120,7 +120,7 @@ a:hover {
 
 .project-photo {
     width: auto;
-    height: auto;
+    height:200px auto;
     border-radius: 10px;
     margin: 0 ;
 }
